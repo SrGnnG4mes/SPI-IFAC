@@ -1,0 +1,70 @@
+1.Faça um Programa que peça dois números e imprima o maior deles.
+
+numero = int(input('Digite um numero:'))
+numero2 = int(input('Digite um numero:'))
+if numero > numero2:
+    print('O primeiro é maior')
+else:
+    print('O segundo é maior')
+
+2.Faça um Programa que peça um valor e mostre na tela se o valor é positivo ou negativo.
+
+numero = int(input('Digite um numero:'))
+
+if numero >= 0:
+    print('Número positivo')
+else:
+    print('Número negativo')
+
+3.Faça um Programa que verifique se uma letra digitada é vogal ou consoante.
+
+letra = input('Digite uma letra:').lower()
+
+if letra in 'aeiou':
+    print('Vogal')
+else:
+    print('Consoante')
+
+4.Crie um programa que solicita a idade de uma pessoa e imprime se ela é maior ou menor de idade
+
+idade = int(input('Digite a sua idade:'))
+
+if idade >= 18:
+    print('Pessoa adulta')
+elif idade <= -1:
+    print('Idade incorreta')    
+else:
+    print('Menor de idade')
+
+5.Escreva um programa que verifica se um número é par ou ímpar.
+
+numero = int(input('Digite um número:'))
+
+if numero % 2 == 0:
+    print(f'O número {numero} é par')
+else:
+    print(f'O número {numero} é impar')
+
+6.Faça um programa personalizado que dê bom dia se a hora atual for até 12 horas, boa tarde se for entre 12 horas e 18 horas e boa noite se for após as 18 horas (utilize a função DateTime).
+
+import datetime
+dataatual = datetime.datetime.now()
+
+if dataatual.hour > 18:
+    print('Boa noite')
+elif dataatual.hour >= 12 and dataatual.hour < 18:
+    print('Boa tarde')
+else:
+    print('Bom dia')
+
+7.Crie um programa que solicite um número aleatório, e verifique se esse numero escolhido bate com o numero gerado aleatoriamente (utilize a função Random)
+
+import random
+
+numeroaleatorio = random.randint(0,10)
+chute = int(input('Digite um numero de 0 a 10:'))
+if chute == numeroaleatorio:
+    print('Parabéns você acertou o número!')
+else:
+    print('Você errou o número :´C')
+    print(f'O seu número era {chute} e que foi sorteado é {numeroaleatorio}')

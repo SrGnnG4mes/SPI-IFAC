@@ -1,0 +1,33 @@
+-- Usar o banco de dados
+USE LojaOnline;
+
+-- Inserir usuários
+INSERT INTO Usuarios (nome, email, senha) VALUES
+('Carlos Silva', 'carlos@email.com', 'senha123'),
+('Maria Oliveira', 'maria@email.com', 'senha456'),
+('João Souza', 'joao@email.com', 'senha789');
+
+-- Inserir categorias de produtos
+INSERT INTO Categorias (nome, descricao) VALUES
+('Eletrônicos', 'Aparelhos eletrônicos em geral'),
+('Livros', 'Livros de diversos gêneros'),
+('Roupas', 'Vestuário masculino e feminino');
+
+-- Inserir produtos
+INSERT INTO Produtos (nome, descricao, preco, estoque, categoria_id) VALUES
+('Smartphone XYZ', 'Celular de última geração com 128GB', 1999.99, 10, 1),
+('Notebook ABC', 'Notebook potente para trabalho e jogos', 3999.99, 5, 1),
+('Livro de SQL', 'Guia completo sobre bancos de dados SQL', 89.90, 20, 2),
+('Camiseta Branca', 'Camiseta de algodão tamanho M', 39.90, 50, 3);
+
+-- Inserir pedidos
+INSERT INTO Pedidos (usuario_id, status) VALUES
+(1, 'Pendente'),
+(2, 'Pago'),
+(3, 'Enviado');
+
+-- Inserir itens do pedido
+INSERT INTO ItensPedido (pedido_id, produto_id, quantidade, preco) VALUES
+(1, 1, 1, 1999.99), -- Carlos comprou um smartphone
+(2, 3, 2, 179.80), -- Maria comprou dois livros de SQL
+(3, 4, 3, 119.70); -- João comprou três camisetas brancas

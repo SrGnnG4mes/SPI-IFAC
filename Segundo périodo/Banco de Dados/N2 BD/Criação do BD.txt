@@ -1,0 +1,50 @@
+-- Criar o banco de dados
+CREATE DATABASE LojaOnline;
+USE LojaOnline;
+
+-- Criar a tabela de usuários
+CREATE TABLE Usuarios (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    email VARCHAR(100) UNIQUE NOT NULL,
+    senha VARCHAR(255) NOT NULL,
+    data_criacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Criar a tabela de categorias de produtos
+CREATE TABLE Categorias (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    descricao TEXT
+);
+
+-- Criar a tabela de produtos
+CREATE TABLE Produtos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    descricao TEXT,
+    preco DECIMAL(10,2) NOT NULL,
+    estoque INT NOT NULL,
+    categoria_id INT,
+    FOREIGN KEY (categoria_id) REFERENCES Categorias(id) ON DELETE SET NULL
+);
+
+-- Criar a tabela de pedidos
+CREATE TABLE Pedidos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    usuario_id INT,
+    data_pedido TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    status ENUM('Pendente', 'Pago', 'Enviado', 'Entregue', 'Cancelado') DEFAULT 'Pendente',
+    FOREIGN KEY (usuario_id) REFERENCES Usuarios(id) ON DELETE CASCADE
+);
+
+-- Criar a tabela de itens do pedido
+CREATE TABLE ItensPedido (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    pedido_id INT,
+    produto_id INT,
+    quantidade INT NOT NULL,
+    preco DECIMAL(10,2) NOT NULL,
+    FOREIGN KEY (pedido_id) REFERENCES Pedidos(id) ON DELETE CASCADE,
+    FOREIGN KEY (produto_id) REFERENCES Produtos(id) ON DELETE CASCADE
+);

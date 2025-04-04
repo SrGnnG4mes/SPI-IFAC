@@ -1,0 +1,108 @@
+@font-face {
+  font-family: 'minhafonte';
+  src: url('../src/fonts/minercraftory.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'minhafonte2';
+  src: url('../src/fonts/Roboto-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@media (max-width: 600px) {
+  nav ul li {
+    display: block; /* Muda para exibição em bloco em telas pequenas */
+    margin: 5px 0; /* Margem vertical */
+  }
+}
+
+
+/* Cabeçalho */
+header {
+  background: rgb(0, 24, 39);
+  color: rgb(255, 255, 255);
+  padding: 25px;
+  text-align: center;
+  font-family: 'minhafonte'; /* Certifique-se de que a fonte está importada */
+  line-height: 1.5; /* Espaçamento de linha de 1,5 */
+}
+
+/* Navegação */
+nav {
+  background: rgb(39, 39, 39);
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 50px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline; /* Efeito de hover */
+  color: #fc06067c; /* Muda a cor ao passar o mouse */
+}
+
+/* Conteúdo principal */
+main {
+  font-family: 'minhafonte2';
+  padding: 20px;
+  margin: 20px;
+  border-radius: 5px;
+  background: rgb(85, 85, 85);
+  line-height: 1.5; /* Espaçamento de linha de 1,5 */
+  text-align: center; 
+}
+
+li {
+  list-style: none;
+  text-align: center;
+}
+
+/* Estilos de links */
+a {
+  color: #051ce6d5;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+th, td {
+  border: 1px solid rgb(85, 85, 85);/* Cor da borda */
+  padding: 8px; /* Espaçamento interno */
+  text-align: left; /* Alinhamento do texto */
+}
+
+th {
+  background-color: #35424a; /* Cor de fundo do cabeçalho */
+  color: #000000; /* Cor do texto do cabeçalho */
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Cor de fundo para linhas pares */
+}
+
+tr:hover {
+    background-color: rgb(78, 78, 78); /* Efeito de hover nas linhas */
+}
