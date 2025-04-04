@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./formulario.js"></script>
+    <title>Formulario</title>
+</head>
+
+<body>
+
+    <input type="text" id="nome">
+
+    <br>
+
+    <select id="estado">
+        <option value="AC">Acre</option>
+        <option value="SP">São Paulo</option>
+        <option value="MG">Minas Gerais</option>
+    </select>
+
+    <br>
+
+    <input type="color" id="cor">
+
+    <br>
+
+    <button onclick="mostrardados()">OK</button>
+
+    <br>
+
+
+    <p id="resposta"></p>
+
+    <br><br><br>
+
+    Deseja receber e-mails?
+    <div id="email">
+        Sim: <input type="radio" name="email" value="Sim">
+        Não: <input type="radio" name="email" value="Não">
+    </div>
+    <br>
+
+    <button onclick="mostrardadosRadio()">OK</button>
+
+    <p id="respostaRadio"></p>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    Qual o sentido da vida?
+    Viver:<input type="checkbox" name="sentido" value="viver">
+    Pular:<input type="checkbox" name="sentido" value="pular">
+    Correr:<input type="checkbox" name="sentido" value="correr">
+    <br>
+    <button onclick="mostrardadosCheckbox()">OK</button>
+
+
+</body>
+
+</html>
