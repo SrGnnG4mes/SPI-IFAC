@@ -1,0 +1,14 @@
+Saída
+    Classe System, Variáveis out(padrão) ou err (erro) + Padrão da saída
+        -print: Recebe uma string e mostra-a na tela
+        -println: Faz o mesmo que o printo + salto para próxima linha
+        -printf: Saída formatada
+
+    Exemplos:
+	    System.out.printf("Hoje é %d/%d/%d\n",9,4,2025);
+        System.out.println("Olá mundo");
+        System.err.println("Erro");
+
+
+Entrada de dados
+    Classe Scanner e da variável in da classe System

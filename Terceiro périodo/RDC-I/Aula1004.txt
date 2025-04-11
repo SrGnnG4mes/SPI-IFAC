@@ -1,0 +1,9 @@
+Rede de computadores
+    Definição: Computadores interconectados, Serviços
+
+Internet:
+    Definição: Padrão descentralizada,
+
+Meios de comunição:
+    Enlace:
+    Conecção:
