@@ -1,4 +1,3 @@
-package Aula0904;
 // para dar uma linha de comentario
 
 import java.util.Scanner;
@@ -31,7 +30,7 @@ public class Main {
         String s = teclado.next();
         */
          
-
+        teclado.close();
 
     }
 }
