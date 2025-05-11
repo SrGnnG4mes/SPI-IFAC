@@ -17,7 +17,7 @@ public class Dectadordecolisão {
 
         byte saida = 1; //Assumimos que há colisão
 
-        if(x0B > x1A || x1B < x0A || y0B > y0A || y1B < y0A) {
+        if(x0B > x1A || x1B < x0A || y0B > y0A || y1B < y1A) {
             saida = 0; //Não há colisão
         }
 
