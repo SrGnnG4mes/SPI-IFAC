@@ -1,0 +1,273 @@
+{
+  "id": "db051ef3-bd31-42b6-82e7-3ec0a5c62306",
+  "version": "2.0",
+  "name": "Agenda_Testes",
+  "url": "http://localhost/aula2710/",
+  "tests": [{
+    "id": "28f41c82-6f63-4a75-8397-9344ca072936",
+    "name": "SalvarContatoCorretamente",
+    "commands": [{
+      "id": "a2e0a34e-8d34-445c-9691-51d56cf356ac",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/aula2710/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2decdcb4-6a76-4fb7-80bf-86c4616630f4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "898x691",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5b481904-6d3e-4254-82eb-a3d9d387256c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Cadastrar Contato",
+      "targets": [
+        ["linkText=Cadastrar Contato", "linkText"],
+        ["css=a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Cadastrar Contato')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'visoes/formCadastrarContato.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Cadastrar Contato')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a85da726-ebed-4124-a4c5-c7c0b4fcfecf",
+      "comment": "",
+      "command": "click",
+      "target": "name=nome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5eafa2b7-180c-4b42-8a0f-c8d7ec8dc3cd",
+      "comment": "",
+      "command": "type",
+      "target": "name=nome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Carlos"
+    }, {
+      "id": "fdfa7442-3009-4f98-8f68-3cae9bf4e497",
+      "comment": "",
+      "command": "click",
+      "target": "name=telefone",
+      "targets": [
+        ["name=telefone", "name"],
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='telefone']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c40aeae4-5ce1-48ac-bf28-58d3b3cd73e8",
+      "comment": "",
+      "command": "type",
+      "target": "name=telefone",
+      "targets": [
+        ["name=telefone", "name"],
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='telefone']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "6987545241"
+    }, {
+      "id": "82c20170-21e5-4faa-aeda-b711c2dc6169",
+      "comment": "",
+      "command": "click",
+      "target": "name=rua",
+      "targets": [
+        ["name=rua", "name"],
+        ["css=input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='rua']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c0d70174-13ec-4a4d-b54e-6a1445d02a28",
+      "comment": "",
+      "command": "type",
+      "target": "name=rua",
+      "targets": [
+        ["name=rua", "name"],
+        ["css=input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='rua']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "Rua das Flores"
+    }, {
+      "id": "ce251ce8-218f-43ca-9e9e-5f5dcf5e9a46",
+      "comment": "",
+      "command": "click",
+      "target": "name=numero",
+      "targets": [
+        ["name=numero", "name"],
+        ["css=input:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='numero']", "xpath:attributes"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "45313545-a7bd-4b05-a3f5-194a467bd488",
+      "comment": "",
+      "command": "type",
+      "target": "name=numero",
+      "targets": [
+        ["name=numero", "name"],
+        ["css=input:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='numero']", "xpath:attributes"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": "Sei lá"
+    }, {
+      "id": "1521e998-1ab8-4800-a30c-c82723bbebc0",
+      "comment": "",
+      "command": "click",
+      "target": "name=bairro",
+      "targets": [
+        ["name=bairro", "name"],
+        ["css=input:nth-child(5)", "css:finder"],
+        ["xpath=//input[@name='bairro']", "xpath:attributes"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "34f3977a-793a-4afb-b176-c9d27292ec1f",
+      "comment": "",
+      "command": "click",
+      "target": "name=numero",
+      "targets": [
+        ["name=numero", "name"],
+        ["css=input:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='numero']", "xpath:attributes"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6d9ba9f3-22a2-4664-bf78-9f462a85e615",
+      "comment": "",
+      "command": "type",
+      "target": "name=numero",
+      "targets": [
+        ["name=numero", "name"],
+        ["css=input:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='numero']", "xpath:attributes"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": "50"
+    }, {
+      "id": "cf28d0c9-14c8-402d-83a3-fd0f1055ed2d",
+      "comment": "",
+      "command": "click",
+      "target": "name=bairro",
+      "targets": [
+        ["name=bairro", "name"],
+        ["css=input:nth-child(5)", "css:finder"],
+        ["xpath=//input[@name='bairro']", "xpath:attributes"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c4c9e0a2-3696-4f7c-b65e-d1861a838081",
+      "comment": "",
+      "command": "type",
+      "target": "name=bairro",
+      "targets": [
+        ["name=bairro", "name"],
+        ["css=input:nth-child(5)", "css:finder"],
+        ["xpath=//input[@name='bairro']", "xpath:attributes"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": "Selá"
+    }, {
+      "id": "84645afd-0a12-4cb2-a248-ee3bd2c189d6",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Enviar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "44b4dfe2-d715-4daf-a955-a58335113f90",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "id=agenda",
+      "targets": [],
+      "value": "200"
+    }]
+  }, {
+    "id": "222c051f-31d1-4617-9eb8-59878d741b29",
+    "name": "SalvarContatoDadosInvalidos",
+    "commands": [{
+      "id": "dc165399-3903-4794-a745-e2d9493e3118",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/aula2710/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ea097d57-ec42-4da6-9c2e-2b325563a092",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1183x752",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7eaabddc-234c-4aba-90e7-ef4758816798",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Cadastrar Contato",
+      "targets": [
+        ["linkText=Cadastrar Contato", "linkText"],
+        ["css=a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Cadastrar Contato')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'visoes/formCadastrarContato.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Cadastrar Contato')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2100a719-b988-493b-8ca0-58ca22090d8f",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Enviar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "76436fab-3b39-438b-835d-01e8491854e1",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "id=erro",
+      "targets": [],
+      "value": "200"
+    }]
+  }],
+  "suites": [{
+    "id": "9f8d561e-e7f2-48fe-8eb8-1e766f4ea147",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["28f41c82-6f63-4a75-8397-9344ca072936"]
+  }],
+  "urls": ["http://localhost/aula2710/"],
+  "plugins": []
+}
