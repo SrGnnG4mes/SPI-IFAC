@@ -5,21 +5,23 @@ import java.sql.SQLOutput;
 public class Main {
     public static void main(String[] args) {
 
-        /*Funcionario funcionario = new Funcionario();
-        funcionario.primeiroNome = "João";
-        funcionario.ultimoNome = "Tamborini";
-        funcionario.idade = 25;
-        System.out.println(funcionario.mostrarNome());*/
+        Conta conta1 = new Conta(1, "João");
 
-        Conta conta = new Conta();
-        conta.depositar(10000);
         try{
-            conta.sacar(50000);
-        }catch (RuntimeException erro){
+            conta1.depositar(10000);
+        } catch (IllegalArgumentException erro){
+            System.out.println("O valor para depósito deve ser maior que 0");
+        }
+
+        try{
+            conta1.sacar(500);
+        }catch (RuntimeException erro) {
             System.out.println("Valor de saldo insulficiente");
         }
 
-        System.out.println(conta.verSaldo());
+        System.out.println(conta1.verSaldo());
+
+        Conta conta2 = new Conta(2, "Ana");
 
     }
 }
