@@ -1,44 +1,21 @@
 package com.example.demo.controladores;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import com.example.demo.modelos.Aluno;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
 import java.sql.SQLOutput;
 
 @RestController
 public class AlunoControlador {
+    @PostMapping("/aluno/salvar")
+    public ResponseEntity<Aluno> salvar(@RequestBody Aluno aluno){
 
-    @GetMapping("/oiMundo")
-    public String oiMundo(){
-        return "Olá Mundo!";
-    }
+        aluno.setId(1L);
+        return new ResponseEntity<Aluno>(aluno, HttpStatus.OK);
 
-    @GetMapping("/somar")
-    public int somar(@RequestParam("num1")int num1,@RequestParam("num2")int num2){
-
-        return num1 + num2;
-    }
-
-    @GetMapping("/somar/{num1}/{num2}")
-    public int somar2(@PathVariable("num1")int num1, @PathVariable("num2")int num2){
-        return num1 + num2;
-    }
-
-    @GetMapping("/subtrair/{num1}/{num2}")
-    public int subtrair(@PathVariable("num1")int num1, @PathVariable("num2")int num2){
-        return num1 - num2;
-    }
-
-    @GetMapping("/multiplicar/{num1}/{num2}")
-    public int multiplicar(@PathVariable("num1")int num1, @PathVariable("num2")int num2){
-        return num1 * num2;
-    }
-
-    @GetMapping("/dividir/{num1}/{num2}")
-    public int dividir(@PathVariable("num1")int num1, @PathVariable("num2")int num2){
-        return num1 / num2;
+        //return "Oi " + aluno.getNome() + "\n" + aluno.getTelefone() + "\n" + aluno.getIdade();
     }
 
 }
