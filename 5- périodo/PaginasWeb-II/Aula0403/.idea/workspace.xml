@@ -4,168 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eed83c98-2457-4730-ad2f-551e46ddbda3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../../.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../.vscode/settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../2- périodo/Banco de Dados/N2 BD/Colocando dados.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2- périodo/Banco de Dados/N2 BD/Colocando dados.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../2- périodo/Banco de Dados/N2 BD/Criação do BD.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2- périodo/Banco de Dados/N2 BD/Criação do BD.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../2- périodo/Construção de paginas Web/N1 Ifac/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2- périodo/Construção de paginas Web/N1 Ifac/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../2- périodo/Construção de paginas Web/N1 Ifac/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2- périodo/Construção de paginas Web/N1 Ifac/css/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../2- périodo/Construção de paginas Web/N1 Ifac/css/playspage.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2- périodo/Construção de paginas Web/N1 Ifac/css/playspage.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../2- périodo/Construção de paginas Web/N1 Ifac/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2- périodo/Construção de paginas Web/N1 Ifac/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../2- périodo/Construção de paginas Web/N1 Ifac/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2- périodo/Construção de paginas Web/N1 Ifac/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../2- périodo/Construção de paginas Web/N1 Ifac/playspage.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2- périodo/Construção de paginas Web/N1 Ifac/playspage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../2- périodo/Construção de paginas Web/N2 Ifac/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2- périodo/Construção de paginas Web/N2 Ifac/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../2- périodo/Construção de paginas Web/N2 Ifac/css/jogodavelha.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2- périodo/Construção de paginas Web/N2 Ifac/css/jogodavelha.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../2- périodo/Construção de paginas Web/N2 Ifac/css/projeto2.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2- périodo/Construção de paginas Web/N2 Ifac/css/projeto2.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../2- périodo/Construção de paginas Web/N2 Ifac/css/projeto3.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2- périodo/Construção de paginas Web/N2 Ifac/css/projeto3.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../2- périodo/Construção de paginas Web/N2 Ifac/css/projeto4.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2- périodo/Construção de paginas Web/N2 Ifac/css/projeto4.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../2- périodo/Construção de paginas Web/N2 Ifac/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2- périodo/Construção de paginas Web/N2 Ifac/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../2- périodo/Construção de paginas Web/N2 Ifac/jogodavelha.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2- périodo/Construção de paginas Web/N2 Ifac/jogodavelha.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../2- périodo/Construção de paginas Web/N2 Ifac/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2- périodo/Construção de paginas Web/N2 Ifac/js/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../2- périodo/Construção de paginas Web/N2 Ifac/js/jogodavelha.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2- périodo/Construção de paginas Web/N2 Ifac/js/jogodavelha.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../2- périodo/Construção de paginas Web/N2 Ifac/js/projeto2.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2- périodo/Construção de paginas Web/N2 Ifac/js/projeto2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../2- périodo/Construção de paginas Web/N2 Ifac/js/projeto3.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2- périodo/Construção de paginas Web/N2 Ifac/js/projeto3.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../2- périodo/Construção de paginas Web/N2 Ifac/projeto2.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2- périodo/Construção de paginas Web/N2 Ifac/projeto2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../2- périodo/Construção de paginas Web/N2 Ifac/projeto3.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2- périodo/Construção de paginas Web/N2 Ifac/projeto3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../2- périodo/Construção de paginas Web/N2 Ifac/projeto4.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2- périodo/Construção de paginas Web/N2 Ifac/projeto4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../2- périodo/Construção de paginas Web/N2 Ifac/projetos/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2- périodo/Construção de paginas Web/N2 Ifac/projetos/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../2- périodo/Construção de paginas Web/N2 Ifac/projetos/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2- périodo/Construção de paginas Web/N2 Ifac/projetos/css/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../2- périodo/Construção de paginas Web/N2 Ifac/projetos/css/playspage.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2- périodo/Construção de paginas Web/N2 Ifac/projetos/css/playspage.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../2- périodo/Construção de paginas Web/N2 Ifac/projetos/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2- périodo/Construção de paginas Web/N2 Ifac/projetos/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../2- périodo/Construção de paginas Web/N2 Ifac/projetos/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2- périodo/Construção de paginas Web/N2 Ifac/projetos/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../2- périodo/Construção de paginas Web/N2 Ifac/projetos/playspage.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2- périodo/Construção de paginas Web/N2 Ifac/projetos/playspage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../2- périodo/Construção de paginas Web/N2 Ifac/src/svg/projeto4.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2- périodo/Construção de paginas Web/N2 Ifac/src/svg/projeto4.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../2- périodo/Engenharia de software/Diagrama.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2- périodo/Engenharia de software/Diagrama.drawio" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../2- périodo/Linguagens de Programação/Atividades POO/att.3.1.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2- périodo/Linguagens de Programação/Atividades POO/att.3.1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../2- périodo/Linguagens de Programação/Atividades POO/att.3.2.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2- périodo/Linguagens de Programação/Atividades POO/att.3.2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../2- périodo/Linguagens de Programação/Atividades POO/att1.1.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2- périodo/Linguagens de Programação/Atividades POO/att1.1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../2- périodo/Linguagens de Programação/Atividades POO/att1.2.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2- périodo/Linguagens de Programação/Atividades POO/att1.2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../2- périodo/Linguagens de Programação/Atividades POO/att2.1.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2- périodo/Linguagens de Programação/Atividades POO/att2.1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../2- périodo/Linguagens de Programação/Atividades POO/att2.2.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2- périodo/Linguagens de Programação/Atividades POO/att2.2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../2- périodo/Linguagens de Programação/Atividades POO/extra.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2- périodo/Linguagens de Programação/Atividades POO/extra.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../2- périodo/Linguagens de Programação/Aula08/aula07.01.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2- périodo/Linguagens de Programação/Aula08/aula07.01.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../2- périodo/Linguagens de Programação/Aula08/exercicio1.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2- périodo/Linguagens de Programação/Aula08/exercicio1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../2- périodo/Linguagens de Programação/Aula08/exercicio2.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2- périodo/Linguagens de Programação/Aula08/exercicio2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../2- périodo/Linguagens de Programação/Aula08/frases.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2- périodo/Linguagens de Programação/Aula08/frases.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../2- périodo/Linguagens de Programação/Aula08/linguagens.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2- périodo/Linguagens de Programação/Aula08/linguagens.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../2- périodo/Linguagens de Programação/Aula08/teste2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2- périodo/Linguagens de Programação/Aula08/teste2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../2- périodo/Linguagens de Programação/Aula3Linguagensdeprogramação/Atividade2 estrutura de decisão.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2- périodo/Linguagens de Programação/Aula3Linguagensdeprogramação/Atividade2 estrutura de decisão.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../2- périodo/Linguagens de Programação/Aula3Linguagensdeprogramação/aula3.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2- périodo/Linguagens de Programação/Aula3Linguagensdeprogramação/aula3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../2- périodo/Linguagens de Programação/Aula7 Linguagens/atividadeaula7.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2- périodo/Linguagens de Programação/Aula7 Linguagens/atividadeaula7.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../2- périodo/Linguagens de Programação/Aula7 Linguagens/aula07.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2- périodo/Linguagens de Programação/Aula7 Linguagens/aula07.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../2- périodo/Linguagens de Programação/att/att.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2- périodo/Linguagens de Programação/att/att.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../2- périodo/Linguagens de Programação/aula10/Contabancaria.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2- périodo/Linguagens de Programação/aula10/Contabancaria.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../2- périodo/Linguagens de Programação/aula10/Veiculo.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2- périodo/Linguagens de Programação/aula10/Veiculo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../2- périodo/Linguagens de Programação/aula10/aula10.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2- périodo/Linguagens de Programação/aula10/aula10.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../2- périodo/Linguagens de Programação/aula11/aula10/Contabancaria.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2- périodo/Linguagens de Programação/aula11/aula10/Contabancaria.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../2- périodo/Linguagens de Programação/aula11/aula10/Veiculo.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2- périodo/Linguagens de Programação/aula11/aula10/Veiculo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../2- périodo/Linguagens de Programação/aula11/aula10/Veiculo2.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2- périodo/Linguagens de Programação/aula11/aula10/Veiculo2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../2- périodo/Linguagens de Programação/aula11/aula10/aula10.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2- périodo/Linguagens de Programação/aula11/aula10/aula10.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../2- périodo/Linguagens de Programação/aula11/aula10/produto.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2- périodo/Linguagens de Programação/aula11/aula10/produto.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../2- périodo/Linguagens de Programação/prova/questão1.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2- périodo/Linguagens de Programação/prova/questão1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../2- périodo/Linguagens de Programação/prova/questão2.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2- périodo/Linguagens de Programação/prova/questão2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../3- périodo/CPW-II/Atividade0805/att.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3- périodo/CPW-II/Atividade0805/att.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../3- périodo/CPW-II/Atividade0805/att.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3- périodo/CPW-II/Atividade0805/att.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../3- périodo/CPW-II/Atividade0805/att.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3- périodo/CPW-II/Atividade0805/att.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../3- périodo/CPW-II/Aula0307/Sistema_de_Cadastro_Final/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3- périodo/CPW-II/Aula0307/Sistema_de_Cadastro_Final/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../3- périodo/CPW-II/Aula0307/Sistema_de_Cadastro_Final/form_cadastro.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3- périodo/CPW-II/Aula0307/Sistema_de_Cadastro_Final/form_cadastro.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../3- périodo/CPW-II/Aula0307/Sistema_de_Cadastro_Final/mostrarContatos.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3- périodo/CPW-II/Aula0307/Sistema_de_Cadastro_Final/mostrarContatos.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../3- périodo/CPW-II/Aula0307/Sistema_de_Cadastro_Final/mostrarContatos.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3- périodo/CPW-II/Aula0307/Sistema_de_Cadastro_Final/mostrarContatos.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../3- périodo/CPW-II/Aula0805/exemplo.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3- périodo/CPW-II/Aula0805/exemplo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../3- périodo/CPW-II/Aula0805/exemplo.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3- périodo/CPW-II/Aula0805/exemplo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../3- périodo/CPW-II/Aula2605/exemplo1.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3- périodo/CPW-II/Aula2605/exemplo1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../3- périodo/CPW-II/Aula2605/exemplo1.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3- périodo/CPW-II/Aula2605/exemplo1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../3- périodo/CPW-II/Aula2606/exemplo.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3- périodo/CPW-II/Aula2606/exemplo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../3- périodo/CPW-II/Aula2606/exemplo.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3- périodo/CPW-II/Aula2606/exemplo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../3- périodo/CPW-II/aula0104/formulario.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3- périodo/CPW-II/aula0104/formulario.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../3- périodo/CPW-II/aula0104/formulario.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3- périodo/CPW-II/aula0104/formulario.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../3- périodo/CPW-II/aula0104/testesdaaula/formulario.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3- périodo/CPW-II/aula0104/testesdaaula/formulario.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../3- périodo/CPW-II/aula0104/testesdaaula/teste.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3- périodo/CPW-II/aula0104/testesdaaula/teste.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../3- périodo/CPW-II/aula0104/testesdaaula/teste.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3- périodo/CPW-II/aula0104/testesdaaula/teste.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../3- périodo/CPW-II/aula0505/exemplo.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3- périodo/CPW-II/aula0505/exemplo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../3- périodo/CPW-II/aula0505/exemplo.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3- périodo/CPW-II/aula0505/exemplo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../3- périodo/CPW-II/aula0505/exemplo2.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3- périodo/CPW-II/aula0505/exemplo2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../3- périodo/CPW-II/aula0704/lista1/att.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3- périodo/CPW-II/aula0704/lista1/att.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../3- périodo/CPW-II/aula0704/lista1/att.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3- périodo/CPW-II/aula0704/lista1/att.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../3- périodo/CPW-II/aula1004/app.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3- périodo/CPW-II/aula1004/app.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../3- périodo/CPW-II/aula1004/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3- périodo/CPW-II/aula1004/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../3- périodo/CPW-II/aula3006/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3- périodo/CPW-II/aula3006/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../3- périodo/CPW-II/aula3006/form_cadastro.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3- périodo/CPW-II/aula3006/form_cadastro.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../3- périodo/CPW-II/aula3006/mostrarContatos.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3- périodo/CPW-II/aula3006/mostrarContatos.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../3- périodo/CPW-II/aula3006/mostrarContatos.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3- périodo/CPW-II/aula3006/mostrarContatos.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../3- périodo/CPW-II/aula3103/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3- périodo/CPW-II/aula3103/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../3- périodo/CPW-II/aula3103/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3- périodo/CPW-II/aula3103/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../3- périodo/CPW-II/aula3103/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3- périodo/CPW-II/aula3103/js/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../3- périodo/EGS-II/Aula2504/Aula2504.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3- périodo/EGS-II/Aula2504/Aula2504.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../3- périodo/EGS-II/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3- périodo/EGS-II/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../3- périodo/EGS-II/pong_python.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3- périodo/EGS-II/pong_python.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../3- périodo/EGS-II/pontuacoes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3- périodo/EGS-II/pontuacoes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../3- périodo/POO/AttBeeCrowd/Att01.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3- périodo/POO/AttBeeCrowd/Att01.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../3- périodo/POO/AttBeeCrowd/Att02.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3- périodo/POO/AttBeeCrowd/Att02.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../3- périodo/POO/AttBeeCrowd/Att03.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3- périodo/POO/AttBeeCrowd/Att03.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../3- périodo/POO/AttBeeCrowd/Att04.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3- périodo/POO/AttBeeCrowd/Att04.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../3- périodo/POO/AttBeeCrowd/questãoavaliativa.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3- périodo/POO/AttBeeCrowd/questãoavaliativa.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../3- périodo/POO/Aula0705/Aplicacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3- périodo/POO/Aula0705/Aplicacao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../3- périodo/POO/Aula0705/Fechadura.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3- périodo/POO/Aula0705/Fechadura.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../3- périodo/POO/Aula0705/Porta.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3- périodo/POO/Aula0705/Porta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../3- périodo/POO/Aula0904/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3- périodo/POO/Aula0904/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../3- périodo/POO/Aula0904/Saida de Dados.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3- périodo/POO/Aula0904/Saida de Dados.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../3- périodo/POO/Aula1204/Acelerador.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3- périodo/POO/Aula1204/Acelerador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../3- périodo/POO/Aula1204/Dectadordecolisão.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3- périodo/POO/Aula1204/Dectadordecolisão.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../3- périodo/POO/Aula1204/escolhamultipla.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3- périodo/POO/Aula1204/escolhamultipla.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../3- périodo/POO/Aula1405/Banco/.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3- périodo/POO/Aula1405/Banco/.vscode/settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../3- périodo/POO/Aula1405/Banco/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3- périodo/POO/Aula1405/Banco/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../3- périodo/POO/Aula1405/Banco/aplicacao/Aplicacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3- périodo/POO/Aula1405/Banco/aplicacao/Aplicacao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../3- périodo/POO/Aula1405/Banco/modelo/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3- périodo/POO/Aula1405/Banco/modelo/Cliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../3- périodo/POO/Aula1405/Banco/modelo/Conta.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3- périodo/POO/Aula1405/Banco/modelo/Conta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../3- périodo/POO/Aula2304/BotasTrocadas.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3- périodo/POO/Aula2304/BotasTrocadas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../3- périodo/POO/Aula2504/Aula2504.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3- périodo/POO/Aula2504/Aula2504.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../3- périodo/POO/Banco/Aplicacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3- périodo/POO/Banco/Aplicacao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../3- périodo/POO/Banco/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3- périodo/POO/Banco/Cliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../3- périodo/POO/Banco/Conta.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3- périodo/POO/Banco/Conta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../3- périodo/POO/main.JAVA" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3- périodo/POO/main.JAVA" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../3- périodo/RDC-I/Aula1004.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3- périodo/RDC-I/Aula1004.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../4- périodo/PaginasWeb-I/Atividades/Atividade1109/ParouImpar.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../4- périodo/PaginasWeb-I/Atividades/Atividade1109/ParouImpar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../4- périodo/PaginasWeb-I/Atividades/Atividade1109/calculaIMC.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../4- périodo/PaginasWeb-I/Atividades/Atividade1109/calculaIMC.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../4- périodo/PaginasWeb-I/Atividades/Atividade1109/calcularmedia.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../4- périodo/PaginasWeb-I/Atividades/Atividade1109/calcularmedia.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../4- périodo/PaginasWeb-I/Atividades/Atividade1109/maiornumero.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../4- périodo/PaginasWeb-I/Atividades/Atividade1109/maiornumero.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../4- périodo/PaginasWeb-I/Atividades/Atividade1109/maiornumeroArray.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../4- périodo/PaginasWeb-I/Atividades/Atividade1109/maiornumeroArray.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../4- périodo/PaginasWeb-I/Atividades/Atividade1109/mediaArray.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../4- périodo/PaginasWeb-I/Atividades/Atividade1109/mediaArray.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../4- périodo/PaginasWeb-I/Atividades/Atividade1109/pagina.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../4- périodo/PaginasWeb-I/Atividades/Atividade1109/pagina.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../4- périodo/PaginasWeb-I/Atividades/Atividade1109/palavrasdiferentes.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../4- périodo/PaginasWeb-I/Atividades/Atividade1109/palavrasdiferentes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../4- périodo/PaginasWeb-I/Finalização do sistema/DAOs/ContatosDao.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../4- périodo/PaginasWeb-I/Finalização do sistema/DAOs/ContatosDao.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../4- périodo/PaginasWeb-I/Finalização do sistema/DAOs/EnderecoDAO.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../4- périodo/PaginasWeb-I/Finalização do sistema/DAOs/EnderecoDAO.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../4- périodo/PaginasWeb-I/Finalização do sistema/DAOs/UsuarioDAO.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../4- périodo/PaginasWeb-I/Finalização do sistema/DAOs/UsuarioDAO.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../4- périodo/PaginasWeb-I/Finalização do sistema/agenda.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../../4- périodo/PaginasWeb-I/Finalização do sistema/agenda.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../4- périodo/PaginasWeb-I/Finalização do sistema/conexao/Conexao.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../4- périodo/PaginasWeb-I/Finalização do sistema/conexao/Conexao.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../4- périodo/PaginasWeb-I/Finalização do sistema/controladores/ContatoControlador.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../4- périodo/PaginasWeb-I/Finalização do sistema/controladores/ContatoControlador.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../4- périodo/PaginasWeb-I/Finalização do sistema/controladores/EnderecoControlador.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../4- périodo/PaginasWeb-I/Finalização do sistema/controladores/EnderecoControlador.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../4- périodo/PaginasWeb-I/Finalização do sistema/controladores/UsuarioControlador.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../4- périodo/PaginasWeb-I/Finalização do sistema/controladores/UsuarioControlador.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../4- périodo/PaginasWeb-I/Finalização do sistema/controladores/principal.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../4- périodo/PaginasWeb-I/Finalização do sistema/controladores/principal.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../4- périodo/PaginasWeb-I/Finalização do sistema/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../4- périodo/PaginasWeb-I/Finalização do sistema/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../4- périodo/PaginasWeb-I/Finalização do sistema/modelos/Contato.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../4- périodo/PaginasWeb-I/Finalização do sistema/modelos/Contato.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../4- périodo/PaginasWeb-I/Finalização do sistema/modelos/Endereco.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../4- périodo/PaginasWeb-I/Finalização do sistema/modelos/Endereco.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../4- périodo/PaginasWeb-I/Finalização do sistema/modelos/Usuario.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../4- périodo/PaginasWeb-I/Finalização do sistema/modelos/Usuario.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../4- périodo/PaginasWeb-I/Finalização do sistema/testes.side" beforeDir="false" afterPath="$PROJECT_DIR$/../../../4- périodo/PaginasWeb-I/Finalização do sistema/testes.side" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../4- périodo/PaginasWeb-I/Finalização do sistema/visoes/agenda.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../4- périodo/PaginasWeb-I/Finalização do sistema/visoes/agenda.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../4- périodo/PaginasWeb-I/Finalização do sistema/visoes/formBuscarContatos.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../4- périodo/PaginasWeb-I/Finalização do sistema/visoes/formBuscarContatos.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../4- périodo/PaginasWeb-I/Finalização do sistema/visoes/formCadastrarContato.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../4- périodo/PaginasWeb-I/Finalização do sistema/visoes/formCadastrarContato.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../4- périodo/PaginasWeb-I/Finalização do sistema/visoes/formCadastrarUsuario.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../4- périodo/PaginasWeb-I/Finalização do sistema/visoes/formCadastrarUsuario.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../4- périodo/PaginasWeb-I/Finalização do sistema/visoes/formEditarContato.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../4- périodo/PaginasWeb-I/Finalização do sistema/visoes/formEditarContato.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../4- périodo/PaginasWeb-I/Finalização do sistema/visoes/formLogin.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../4- périodo/PaginasWeb-I/Finalização do sistema/visoes/formLogin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../4- périodo/PaginasWeb-I/Finalização do sistema/visoes/mostrarContatosVisoes.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../4- périodo/PaginasWeb-I/Finalização do sistema/visoes/mostrarContatosVisoes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Aula040326.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Aula040326.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Funcionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Funcionario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/banco/Conta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/banco/Conta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/banco/ContaEmpresarial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/banco/ContaEmpresarial.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/banco/ContaUniversitaria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/banco/ContaUniversitaria.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../README.md" afterDir="false" />
-    </list>
+    <list default="true" id="eed83c98-2457-4730-ad2f-551e46ddbda3" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -184,8 +23,11 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 0
+}]]></component>
   <component name="ProjectId" id="3B8Cp9xPq8VkiTF7DKVZ0FWS0t2" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -194,6 +36,9 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/Aluno/Documents/GitHub/SPI-IFAC/5- périodo/PaginasWeb-II/Aula0403",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
@@ -214,6 +59,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.31033.145" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
