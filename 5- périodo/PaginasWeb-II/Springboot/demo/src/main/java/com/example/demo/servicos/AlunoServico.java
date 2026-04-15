@@ -50,4 +50,16 @@ public class AlunoServico {
     public void editar(Aluno aluno){
         alunoRepositorio.save(aluno);
     }
+
+    public Aluno buscarTelefone(String telefone){
+
+        Optional<Aluno> optional = alunoRepositorio.findByTelefone(telefone);
+
+        if (optional.isEmpty()){
+            throw new IllegalArgumentException("Aluno não foi encontrado");
+        }else {
+            return optional.get();
+        }
+
+    }
 }

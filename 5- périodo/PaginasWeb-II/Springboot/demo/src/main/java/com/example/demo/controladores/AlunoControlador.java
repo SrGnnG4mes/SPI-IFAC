@@ -22,11 +22,9 @@ public class AlunoControlador {
     public ResponseEntity<Aluno> salvar(@RequestBody Aluno aluno){
 
         alunoServico.salvar(aluno);
-
-
-        //aluno.setId(1L);
         return new ResponseEntity<Aluno>(aluno, HttpStatus.OK);
 
+        //aluno.setId(1L);
         //return "Oi " + aluno.getNome() + "\n" + aluno.getTelefone() + "\n" + aluno.getIdade();
     }
 
@@ -37,12 +35,13 @@ public class AlunoControlador {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<Aluno> buscarPeloId(@PathVariable Long id){
+    public ResponseEntity buscarPeloId(@PathVariable Long id){
+
         try {
             Aluno aluno = alunoServico.buscarPeloId(id);
             return new ResponseEntity<Aluno>(aluno, HttpStatus.OK);
         }catch (IllegalArgumentException erro){
-            return new ResponseEntity<Aluno>(HttpStatus.NOT_FOUND);
+            return new ResponseEntity<String>(erro.getMessage(), HttpStatus.NOT_FOUND);
         }
     }
 
@@ -60,6 +59,17 @@ public class AlunoControlador {
     public ResponseEntity<Aluno> editar(@RequestBody Aluno aluno){
         alunoServico.editar(aluno);
         return new ResponseEntity<Aluno>(HttpStatus.OK);
+    }
+
+    @GetMapping("/telefone/{telefone}")
+    public ResponseEntity buscarTelefone(@PathVariable String telefone){
+
+        try {
+            Aluno aluno = alunoServico.buscarTelefone(telefone);
+            return new ResponseEntity<Aluno>(aluno, HttpStatus.OK);
+        }catch (IllegalArgumentException erro){
+            return new ResponseEntity<String>(erro.getMessage(), HttpStatus.NOT_FOUND);
+        }
     }
 
 }
