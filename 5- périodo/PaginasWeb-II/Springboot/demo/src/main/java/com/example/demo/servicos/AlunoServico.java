@@ -1,13 +1,16 @@
 package com.example.demo.servicos;
 
+import com.example.demo.DTOs.request.AlunoRequestDTO;
+import com.example.demo.DTOs.response.AlunoResponseDTO;
 import com.example.demo.modelos.Aluno;
 import com.example.demo.repositorios.AlunoRepositorio;
-import org.hibernate.boot.models.annotations.spi.AttributeMarker;
+import com.example.demo.utils.AlunoConversor;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -16,50 +19,66 @@ public class AlunoServico {
 
     @Autowired
     AlunoRepositorio alunoRepositorio;
+    @Autowired
+    AlunoConversor alunoConversor;
 
-    public void salvar(Aluno aluno){
+    public AlunoResponseDTO salvar(AlunoRequestDTO alunoDTO) throws DataIntegrityViolationException {
+        Aluno aluno = alunoConversor.converterDTO(alunoDTO);
         alunoRepositorio.save(aluno);
-    }
-    public List<Aluno> buscarTodos(){
-        return alunoRepositorio.findAll();
+        return alunoConversor.converterAluno(aluno);
     }
 
-    public Aluno buscarPeloId(@PathVariable Long id){
-
-        Optional<Aluno> optionalAluno = alunoRepositorio.findById(id);
-
-        if (optionalAluno.isEmpty()){
-            throw new IllegalArgumentException("Aluno não foi encontrado");
-        }else {
-            return optionalAluno.get();
+    public List<AlunoResponseDTO> buscarTodos(){
+        List<Aluno> alunos = alunoRepositorio.findAll();
+        List<AlunoResponseDTO> alunoResponseDTOS = new ArrayList<>();
+        for (Aluno aluno : alunos) {
+            AlunoResponseDTO alunoResponseDTO =
+                    alunoConversor.converterAluno(aluno);
+            alunoResponseDTOS.add(alunoResponseDTO);
         }
 
+        return alunoResponseDTOS;
+    }
+
+    public AlunoResponseDTO buscarPeloId(Long id){
+
+        Optional<Aluno> optionalAluno = alunoRepositorio.findById(id);
+        if(optionalAluno.isEmpty()){
+            throw new IllegalArgumentException("O aluno não foi encontrado");
+        }
+        Aluno aluno = optionalAluno.get();
+        AlunoResponseDTO alunoResponseDTO =
+                alunoConversor.converterAluno(aluno);
+        return alunoResponseDTO;
+    }
+
+    public AlunoResponseDTO buscarPeloTelefone(String telefone){
+        Optional<Aluno> optional = alunoRepositorio.findByTelefone(telefone);
+        if(optional.isEmpty()){
+            throw new IllegalArgumentException("O aluno não foi encontrado");
+        }
+        AlunoResponseDTO alunoResponseDTO =
+                alunoConversor.converterAluno(optional.get());
+        return alunoResponseDTO;
     }
 
     public void excluir(Long id){
 
-        Optional<Aluno> optionalAluno = alunoRepositorio.findById(id);
+        Optional<Aluno> optionalAluno =
+                alunoRepositorio.findById(id);
 
-        if (optionalAluno.isEmpty()){
-            throw new IllegalArgumentException("Aluno não foi encontrado");
-        }else {
+        if(optionalAluno.isEmpty()){
+            throw new IllegalArgumentException("O aluno não foi encontrado");
+        }else{
             alunoRepositorio.deleteById(id);
         }
     }
 
-    public void editar(Aluno aluno){
+    public AlunoResponseDTO editar(AlunoRequestDTO alunoDTO){
+        Aluno aluno = alunoConversor.converterDTO(alunoDTO);
         alunoRepositorio.save(aluno);
+        return alunoConversor.converterAluno(aluno);
     }
 
-    public Aluno buscarTelefone(String telefone){
 
-        Optional<Aluno> optional = alunoRepositorio.findByTelefone(telefone);
-
-        if (optional.isEmpty()){
-            throw new IllegalArgumentException("Aluno não foi encontrado");
-        }else {
-            return optional.get();
-        }
-
-    }
 }
