@@ -4,18 +4,9 @@
 
 Bem-vindo ao repositório de materiais da faculdade! Aqui você encontrará anotações, exercícios, projetos e outros recursos úteis para suas disciplinas.
 
-## Índice
-
-- [Descrição do Repositório](#descrição-do-repositório)
-- [Licença](#licença)
-
 ## Descrição do Repositório
 
 Este repositório contém materiais de diversas disciplinas que estou cursando. O objetivo é compartilhar conhecimento e facilitar o acesso a recursos úteis para todos os alunos.
-
-## Licença
-
-Este projeto está licenciado sob a [MIT License](LICENSE).
 
 ## Contato
 
