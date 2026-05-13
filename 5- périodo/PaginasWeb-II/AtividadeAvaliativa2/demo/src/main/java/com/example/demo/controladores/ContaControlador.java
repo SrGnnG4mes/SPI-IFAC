@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/contas")
-public class ContaController {
+public class ContaControlador {
 
     @Autowired
     private ContaServico contaServico;
