@@ -13,10 +13,10 @@ public class TransferenciaDTO {
     private String numeroContaDestino;
 
     @NotNull(message = "O valor é obrigatório")
-    @DecimalMin(value = "0.01", message = "O valor dever ser maior que zero")
+    @DecimalMin(value = "0.01", message = "O valor deve ser maior que zero")
     private Double valor;
 
-    public TransferenciaDTO (){}
+    public TransferenciaDTO() {}
 
     public String getNumeroContaOrigem() { return numeroContaOrigem; }
     public void setNumeroContaOrigem(String numeroContaOrigem) { this.numeroContaOrigem = numeroContaOrigem; }
@@ -26,5 +26,4 @@ public class TransferenciaDTO {
 
     public Double getValor() { return valor; }
     public void setValor(Double valor) { this.valor = valor; }
-
 }

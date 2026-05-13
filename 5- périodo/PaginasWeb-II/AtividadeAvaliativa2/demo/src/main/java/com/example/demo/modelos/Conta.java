@@ -8,7 +8,7 @@ public class Conta {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long Id;
+    private Long id;
 
     private String nomeTitular;
 
@@ -25,35 +25,14 @@ public class Conta {
         this.saldo = saldo;
     }
 
-    public Long getId() {
-        return Id;
-    }
+    public Long getId() { return id; }
 
-    public void setId(Long id) {
-        Id = id;
-    }
+    public String getNomeTitular() { return nomeTitular; }
+    public void setNomeTitular(String nomeTitular) { this.nomeTitular = nomeTitular; }
 
-    public String getNomeTitular() {
-        return nomeTitular;
-    }
+    public String getNumeroConta() { return numeroConta; }
+    public void setNumeroConta(String numeroConta) { this.numeroConta = numeroConta; }
 
-    public void setNomeTitular(String nomeTitular) {
-        this.nomeTitular = nomeTitular;
-    }
-
-    public String getNumeroConta() {
-        return numeroConta;
-    }
-
-    public void setNumeroConta(String numeroConta) {
-        this.numeroConta = numeroConta;
-    }
-
-    public double getSaldo() {
-        return saldo;
-    }
-
-    public void setSaldo(double saldo) {
-        this.saldo = saldo;
-    }
+    public double getSaldo() { return saldo; }
+    public void setSaldo(double saldo) { this.saldo = saldo; }
 }

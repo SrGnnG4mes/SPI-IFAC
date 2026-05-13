@@ -9,8 +9,8 @@ public class OperacaoDTO {
     @DecimalMin(value = "0.01", message = "O valor deve ser maior que zero")
     private Double valor;
 
-    public OperacaoDTO(){}
+    public OperacaoDTO() {}
 
-    public Double getValor(){ return valor;}
-    public void setValor(Double valor){ this.valor = valor;}
+    public Double getValor() { return valor; }
+    public void setValor(Double valor) { this.valor = valor; }
 }

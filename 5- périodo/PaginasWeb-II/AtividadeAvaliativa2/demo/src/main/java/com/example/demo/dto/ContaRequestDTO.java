@@ -16,10 +16,14 @@ public class ContaRequestDTO {
     @Min(value = 0, message = "O saldo inicial não pode ser negativo")
     private Double saldoInicial;
 
-    public ContaRequestDTO(){}
+    public ContaRequestDTO() {}
 
-    public String getNomeTitular(){
-        return nomeTitular;
-    }
-    public void setNomeTitular (String nomeTitular){this.nomeTitular = nomeTitular;}
+    public String getNomeTitular() { return nomeTitular; }
+    public void setNomeTitular(String nomeTitular) { this.nomeTitular = nomeTitular; }
+
+    public String getNumeroConta() { return numeroConta; }
+    public void setNumeroConta(String numeroConta) { this.numeroConta = numeroConta; }
+
+    public Double getSaldoInicial() { return saldoInicial; }
+    public void setSaldoInicial(Double saldoInicial) { this.saldoInicial = saldoInicial; }
 }

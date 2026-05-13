@@ -1,13 +1,20 @@
 package com.example.demo.servicos;
 
+import com.example.demo.dto.ContaRequestDTO;
+import com.example.demo.dto.ContaResponseDTO;
+import com.example.demo.dto.OperacaoDTO;
+import com.example.demo.dto.TransferenciaDTO;
+import com.example.demo.exception.ContaJaExisteException;
+import com.example.demo.exception.ContaNaoEncontradaException;
+import com.example.demo.exception.SaldoInsuficienteException;
 import com.example.demo.modelos.Conta;
 import com.example.demo.repositorios.ContaRepositorio;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Optional;
 
-import static org.apache.logging.log4j.ThreadContext.isEmpty;
 
 @Service
 public class ContaServico {
@@ -15,64 +22,127 @@ public class ContaServico {
     @Autowired
     private ContaRepositorio contaRepositorio;
 
-    public Conta criarConta(Conta conta){
-        if (conta.getNomeTitular() == null || conta.getNomeTitular().isEmpty()) {
-            throw new RuntimeException("O nome do titular é obrigatório");
+    // ----------------------------------------
+    // CRIAR CONTA
+    // ----------------------------------------
+
+    public ContaResponseDTO criarConta(ContaRequestDTO dto) {
+        if (contaRepositorio.existsByNumeroConta(dto.getNumeroConta())) {
+            throw new ContaJaExisteException("Já existe uma conta com o número: " + dto.getNumeroConta());
         }
 
-        if (contaRepositorio.existsByNumeroConta(conta.getNumeroConta())) {
-            throw new RuntimeException("Já existe uma conta com esse número");
-        }
-        if (conta.getSaldo() < 0) {
-            throw new RuntimeException("O saldo inicial não pode ser negativo");
-        }
-        return contaRepositorio.save(conta);
+        Conta conta = new Conta(dto.getNomeTitular(), dto.getNumeroConta(), dto.getSaldoInicial());
+        contaRepositorio.save(conta);
+
+        return new ContaResponseDTO(conta);
     }
 
-    public Conta buscarPorId(Long id){
+    // ----------------------------------------
+    // BUSCAR POR ID
+    // ----------------------------------------
+
+    public ContaResponseDTO buscarPorId(Long id) {
         Optional<Conta> conta = contaRepositorio.findById(id);
 
-        if (conta.isEmpty()){
-            throw new RuntimeException("Conta não encontrada" + id);
+        if (conta.isEmpty()) {
+            throw new ContaNaoEncontradaException("Conta não encontrada com id: " + id);
         }
 
-        return conta.get();
+        return new ContaResponseDTO(conta.get());
     }
 
-    public Conta buscarPorNumero(String numeroConta) {
+    // ----------------------------------------
+    // BUSCAR POR NÚMERO DA CONTA
+    // ----------------------------------------
+
+    public ContaResponseDTO buscarPorNumero(String numeroConta) {
         Optional<Conta> conta = contaRepositorio.findByNumeroConta(numeroConta);
 
         if (conta.isEmpty()) {
-            throw new RuntimeException("Conta não encontrada: " + numeroConta);
+            throw new ContaNaoEncontradaException("Conta não encontrada: " + numeroConta);
         }
 
-        return conta.get();
+        return new ContaResponseDTO(conta.get());
     }
 
-    public Conta depositar(String numeroConta, double valor){
-        if (valor <= 0) {
-            throw new RuntimeException("O valor do déposito deve ser maior que zero");
+    // ----------------------------------------
+    // DEPÓSITO
+    // ----------------------------------------
+
+    public ContaResponseDTO depositar(String numeroConta, OperacaoDTO dto) {
+        Optional<Conta> optional = contaRepositorio.findByNumeroConta(numeroConta);
+
+        if (optional.isEmpty()) {
+            throw new ContaNaoEncontradaException("Conta não encontrada: " + numeroConta);
         }
 
-        Conta conta = buscarPorNumero(numeroConta);
-        conta.setSaldo(conta.getSaldo() + valor);
+        Conta conta = optional.get();
+        conta.setSaldo(conta.getSaldo() + dto.getValor());
+        contaRepositorio.save(conta);
 
-        return contaRepositorio.save(conta);
+        return new ContaResponseDTO(conta);
     }
 
-    public Conta sacar(String numeroConta, double valor){
-        if (valor <= 0){
-            throw new RuntimeException("O valor do saque deve ser maior que 0");
+    // ----------------------------------------
+    // SAQUE
+    // ----------------------------------------
+
+    public ContaResponseDTO sacar(String numeroConta, OperacaoDTO dto) {
+        Optional<Conta> optional = contaRepositorio.findByNumeroConta(numeroConta);
+
+        if (optional.isEmpty()) {
+            throw new ContaNaoEncontradaException("Conta não encontrada: " + numeroConta);
         }
 
-        Conta conta = buscarPorNumero(numeroConta);
+        Conta conta = optional.get();
 
-        if (conta.getSaldo() < valor){
-            throw new RuntimeException("Saldo Insulficiente");
+        if (conta.getSaldo() < dto.getValor()) {
+            throw new SaldoInsuficienteException("Saldo insuficiente. Saldo atual: " + conta.getSaldo());
         }
 
-        conta.setSaldo(conta.getSaldo() - valor);
+        conta.setSaldo(conta.getSaldo() - dto.getValor());
+        contaRepositorio.save(conta);
 
-        return contaRepositorio.save(conta);
+        return new ContaResponseDTO(conta);
+    }
+
+    // ----------------------------------------
+    // TRANSFERÊNCIA (atômica com @Transactional)
+    // ----------------------------------------
+
+    @Transactional
+    public void transferir(TransferenciaDTO dto) {
+        if (dto.getNumeroContaOrigem().equals(dto.getNumeroContaDestino())) {
+            throw new IllegalArgumentException("Conta de origem e destino não podem ser iguais");
+        }
+
+        Optional<Conta> optOrigem = contaRepositorio.findByNumeroConta(dto.getNumeroContaOrigem());
+        if (optOrigem.isEmpty()) {
+            throw new ContaNaoEncontradaException("Conta de origem não encontrada: " + dto.getNumeroContaOrigem());
+        }
+
+        Optional<Conta> optDestino = contaRepositorio.findByNumeroConta(dto.getNumeroContaDestino());
+        if (optDestino.isEmpty()) {
+            throw new ContaNaoEncontradaException("Conta de destino não encontrada: " + dto.getNumeroContaDestino());
+        }
+
+        Conta origem  = optOrigem.get();
+        Conta destino = optDestino.get();
+
+        if (origem.getSaldo() < dto.getValor()) {
+            throw new SaldoInsuficienteException("Saldo insuficiente para transferência. Saldo atual: " + origem.getSaldo());
+        }
+
+        // Débito na origem
+        origem.setSaldo(origem.getSaldo() - dto.getValor());
+
+        // Crédito no destino
+        // O @Transactional garante que se qualquer erro ocorrer aqui,
+        // o débito acima também será desfeito (rollback automático)
+        destino.setSaldo(destino.getSaldo() + dto.getValor());
+
+        contaRepositorio.save(origem);
+        contaRepositorio.save(destino);
     }
 }
+
