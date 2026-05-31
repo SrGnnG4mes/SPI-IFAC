@@ -19,7 +19,7 @@ public class Prestador {
 
     @NotBlank
     @Column(nullable = false)
-    private String especilidade;
+    private String especialidade;
 
     public Prestador() {}
 
@@ -39,11 +39,11 @@ public class Prestador {
         this.nome = nome;
     }
 
-    public String getEspecilidade() {
-        return especilidade;
+    public String getEspecialidade() {
+        return especialidade;
     }
 
-    public void setEspecilidade(String especilidade) {
-        this.especilidade = especilidade;
+    public void setEspecialidade(String especialidade) {
+        this.especialidade = especialidade;
     }
 }
