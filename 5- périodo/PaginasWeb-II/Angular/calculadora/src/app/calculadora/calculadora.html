@@ -1,0 +1,18 @@
+<h1>Calculadora</h1>
+
+<div>
+<label>Número 1:</label>
+<input type="number" #num1>
+</div>
+
+<div>
+<label>Número 2:</label>
+<input type="number" #num2>
+
+</div>
+
+<button (click)="somar(+num1.value, +num2.value)">+</button>
+<button (click)="subtrair(+num1.value, +num2.value)">-</button>
+<button (click)="multiplicar(+num1.value, +num2.value)">*</button>
+<button (click)="dividir(+num1.value, +num2.value)">/</button>
+<p>Resultado: {{ resultado }}</p>
