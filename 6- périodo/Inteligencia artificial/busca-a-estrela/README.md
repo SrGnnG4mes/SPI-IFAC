@@ -61,10 +61,16 @@ Labirinto da aula, do início até a saída:
 
 | Algoritmo | Células expandidas | Caminho |
 |---|---:|---:|
-| Aleatória | 159 | 35 |
+| Aleatória | ~160 (varia a cada execução) | 35–37 |
 | DFS | 60 | 35 (não é o mínimo) |
 | BFS | 161 | 33 |
 | **A\*** | **136** | **33** |
+| A\* sem o desempate por `-g` | 142 | 33 |
+
+A linha da aleatória muda a cada execução, porque ela sorteia a célula; as
+outras são determinísticas. O desempate por `-g` muda só a **ordem** de
+expansão — o caminho continua sendo o mínimo (`busca(..., desempate=False)`
+desliga, para comparar).
 
 Sala aberta 21×21, de um canto ao outro: BFS expande as 361 células, o A\*
 expande 37 — ambos com caminho de 37 células.

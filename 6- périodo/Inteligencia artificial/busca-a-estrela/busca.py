@@ -131,12 +131,17 @@ def _expandir(estado, celula, objetivo, vizinhos, fronteira):
         fronteira.append(viz)
 
 
-def busca(inicio, objetivo, vizinhos, algoritmo="astar"):
+def busca(inicio, objetivo, vizinhos, algoritmo="astar", desempate=True):
     """Roda a busca inteira e devolve o histórico: uma lista com um estado
     (dicionário) por passo, na ordem em que aconteceram.
 
     `algoritmo` escolhe a estratégia: "astar" (padrão), "bfs", "dfs" ou
     "aleatoria". No maze.py dá pra trocar pelas teclas 1/2/3/4.
+
+    `desempate` só afeta o A*: com False, células com o mesmo f são
+    expandidas na ordem em que entraram na fronteira (que é o que o
+    pseudocódigo clássico faz, já que ele não especifica o desempate).
+    Serve pra medir o efeito do desempate por -g; veja comparar.py.
     """
     if algoritmo not in ALGORITMOS:
         raise ValueError(f"algoritmo desconhecido: {algoritmo!r} (use um de {ALGORITMOS})")
@@ -172,8 +177,8 @@ def busca(inicio, objetivo, vizinhos, algoritmo="astar"):
         #            mais (g maior), porque esse está mais adiantado rumo
         #            ao objetivo. Sem esse desempate, num corredor aberto o
         #            A* empata com quase todo mundo e acaba varrendo o mapa
-        #            como a BFS (veja comparar.py: 37 células com desempate
-        #            contra 361 sem ele);
+        #            como a BFS (o parâmetro desempate=False desliga isso,
+        #            e o comparar.py mostra os dois números lado a lado);
         #   ordem -> só pra nunca precisar comparar tuplas de coordenadas.
         custo_g = {inicio: 0}          # menor custo real conhecido até cada célula
         contador = itertools.count()   # ordem de entrada, usada só como último desempate
@@ -211,7 +216,8 @@ def busca(inicio, objetivo, vizinhos, algoritmo="astar"):
                 estado["pai"][viz] = celula
                 estado["fronteira"].add(viz)
                 f = novo_g + heuristica(viz, objetivo)
-                heapq.heappush(fronteira, (f, -novo_g, next(contador), viz))
+                criterio_g = -novo_g if desempate else 0
+                heapq.heappush(fronteira, (f, criterio_g, next(contador), viz))
 
             historico.append(_copia_do_estado(estado))
 

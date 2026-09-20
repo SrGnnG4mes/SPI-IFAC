@@ -85,8 +85,14 @@ def sala_aberta(lado=21):
         pct = 100.0 * final["passos"] / livres
         print(f"{NOMES[nome]:<26}{final['passos']:>12}{pct:>15.0f}%"
               f"{len(final['caminho']):>10}")
+    sem = busca(inicio, objetivo, vizinhos_sala, "astar", desempate=False)[-1]
+    pct = 100.0 * sem["passos"] / livres
+    print(f"{'A* sem desempate por -g':<26}{sem['passos']:>12}{pct:>15.0f}%"
+          f"{len(sem['caminho']):>10}")
     print("\nMesmo caminho mínimo, mas aqui a heurística é perfeita: o A* vai")
-    print("quase direto ao objetivo e a BFS varre a sala toda.\n")
+    print("quase direto ao objetivo e a BFS varre a sala toda.")
+    print("E é aqui que o desempate aparece inteiro: sem ele, TODA célula de")
+    print("um caminho mínimo empata no mesmo f, e o A* expande o platô todo.\n")
 
 
 def main():
@@ -109,6 +115,15 @@ def main():
         caminho = len(final["caminho"]) if final["encontrado"] else 0
         pct = 100.0 * final["passos"] / total_livres
         print(f"{NOMES[nome]:<26}{final['passos']:>12}{pct:>15.0f}%{caminho:>10}")
+
+    # o mesmo A*, mas sem o desempate por -g: mostra que o desempate muda só
+    # a ORDEM de expansão, nunca o tamanho do caminho
+    sem_desempate = busca(INICIO, OBJETIVO, vizinhos, "astar", desempate=False)[-1]
+    pct = 100.0 * sem_desempate["passos"] / total_livres
+    print(f"{'A* sem desempate por -g':<26}{sem_desempate['passos']:>12}"
+          f"{pct:>15.0f}%{len(sem_desempate['caminho']):>10}")
+    print("\n(a linha da busca aleatória muda a cada execução: ela sorteia a")
+    print(" célula; as outras três são determinísticas e repetem sempre)")
     print()
 
     bfs, astar = resultados["bfs"], resultados["astar"]

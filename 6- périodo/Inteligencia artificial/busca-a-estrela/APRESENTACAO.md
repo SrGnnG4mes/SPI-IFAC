@@ -110,6 +110,12 @@ O `-g` é um **desempate**: entre dois `f` iguais, prefere quem já andou mais
 o A\* acaba varrendo o mapa como a BFS — na sala aberta de `comparar.py` são
 **37 células com o desempate contra 361 sem ele**.
 
+O pseudocódigo clássico **não especifica** o desempate, e qualquer critério
+continua correto — o `-g` muda só a ordem de expansão, nunca o tamanho do
+caminho. Se perguntarem, o `comparar.py` imprime as duas linhas lado a lado
+(é o parâmetro `busca(..., desempate=False)`), então dá para provar o número
+rodando na hora em vez de citar de memória.
+
 **(b) O `g` é recalculado quando se acha um caminho melhor** — é isso que o
 `_expandir()` das outras buscas não faz:
 
