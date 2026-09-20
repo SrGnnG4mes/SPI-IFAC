@@ -18,6 +18,7 @@ O roteiro da apresentação está em [APRESENTACAO.md](APRESENTACAO.md).
 | `maze.py` | Visualização em pygame; teclas **1/2/3/4** trocam de algoritmo |
 | `comparar.py` | Tabela A\* × BFS × DFS × aleatória, em dois cenários |
 | `testes.py` | Confere se o A\* acha o caminho mínimo em 168 pontos de partida |
+| `porque_recalcular.py` | Mostra o que quebra quando o A\* deixa de recalcular o `g` |
 
 ## Como rodar
 
@@ -33,6 +34,10 @@ python comparar.py
 
 ```bash
 python testes.py
+```
+
+```bash
+python porque_recalcular.py
 ```
 
 Visualização gráfica (precisa do pygame):

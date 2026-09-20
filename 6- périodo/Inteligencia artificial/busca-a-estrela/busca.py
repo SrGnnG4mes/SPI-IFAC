@@ -131,7 +131,8 @@ def _expandir(estado, celula, objetivo, vizinhos, fronteira):
         fronteira.append(viz)
 
 
-def busca(inicio, objetivo, vizinhos, algoritmo="astar", desempate=True):
+def busca(inicio, objetivo, vizinhos, algoritmo="astar", desempate=True,
+          recalcular=True):
     """Roda a busca inteira e devolve o histórico: uma lista com um estado
     (dicionário) por passo, na ordem em que aconteceram.
 
@@ -142,6 +143,11 @@ def busca(inicio, objetivo, vizinhos, algoritmo="astar", desempate=True):
     expandidas na ordem em que entraram na fronteira (que é o que o
     pseudocódigo clássico faz, já que ele não especifica o desempate).
     Serve pra medir o efeito do desempate por -g; veja comparar.py.
+
+    `recalcular` também só afeta o A*: com False, ele para de comparar
+    custos e passa a perguntar só "já conheço essa célula?", como a BFS
+    e a DFS fazem. Isso QUEBRA a otimalidade de propósito — existe só
+    pra mostrar por que o recálculo é necessário; veja porque_recalcular.py.
     """
     if algoritmo not in ALGORITMOS:
         raise ValueError(f"algoritmo desconhecido: {algoritmo!r} (use um de {ALGORITMOS})")
@@ -210,8 +216,11 @@ def busca(inicio, objetivo, vizinhos, algoritmo="astar", desempate=True):
                 novo_g = custo_g[celula] + custo_do_passo(celula, viz)
                 # só aceita o vizinho se este caminho for melhor (mais
                 # barato) do que o melhor caminho já conhecido até ele
-                if viz in custo_g and novo_g >= custo_g[viz]:
-                    continue
+                if viz in custo_g:
+                    if not recalcular:
+                        continue  # "já conheço": o jeito BFS/DFS, e errado aqui
+                    if novo_g >= custo_g[viz]:
+                        continue
                 custo_g[viz] = novo_g
                 estado["pai"][viz] = celula
                 estado["fronteira"].add(viz)
