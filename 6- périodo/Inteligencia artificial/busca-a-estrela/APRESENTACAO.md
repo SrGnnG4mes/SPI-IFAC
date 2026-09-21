@@ -1,7 +1,7 @@
 # Busca A* (A estrela) — roteiro da apresentação
 
 **Trabalho:** Microapresentações sobre algoritmos de busca — 10 minutos.
-**Apresentação individual:** Gabriel Nascimento Nogueira.
+**Integrantes:** Gabriel Nascimento Nogueira e Hugo Benjamim de Oliveira.
 
 **Pergunta que a apresentação tem que responder:**
 > Como o A\* combina o custo do caminho já percorrido com uma estimativa do
@@ -22,18 +22,30 @@
 
 ## Os 10 minutos, bloco a bloco
 
-| Tempo | Bloco | Slides | Seções aqui |
-|---|---|---|---|
-| 0:00 – 0:30 | Abertura e a pergunta do trabalho | 1–2 | — |
-| 0:30 – 3:30 | A ideia: fronteira, `g`/`h`/`f`, Manhattan, `g+h` × só `g` × só `h` | 3–6 | 1 e 2 |
-| 3:30 – 5:30 | O código do A\* em `busca.py` | 7–8 | 3 |
-| 5:30 – 8:00 | Demo ao vivo, mapas e números | 9–12 | 4 e 5 |
-| 8:00 – 9:30 | Vantagem, limitação e aplicações | 13–14 | 6 e 7 |
-| 9:30 – 10:00 | Fecho e perguntas | 15 | 8 e colinha |
+| Tempo | Bloco | Slides | Quem | Seções aqui |
+|---|---|---|---|---|
+| 0:00 – 0:30 | Abertura e a pergunta do trabalho | 1–2 | Hugo | — |
+| 0:30 – 2:30 | A fronteira e os três números: `g`, `h`, `f` | 3–4 | Hugo | 1 |
+| 2:30 – 4:00 | Manhattan e `g+h` × só `g` × só `h` | 5–6 | Hugo | 2 |
+| 4:00 – 5:30 | O código do A\* em `busca.py` | 7–8 | Gabriel | 3 |
+| 5:30 – 8:00 | Demo ao vivo, mapas e números | 9–12 | Gabriel | 4 e 5 |
+| 8:00 – 9:30 | Vantagem, limitação e aplicações | 13–14 | Gabriel | 6 e 7 |
+| 9:30 – 10:00 | Fecho e perguntas | 15 | os dois | 8 e colinha |
 
-Apresentando sozinho, o risco é o tempo: o bloco da demo é o que mais escapa.
-Deixe a janela do `maze.py` **já aberta** antes de começar e, se estiver
-atrasado, corte a busca aleatória e a DFS — mostre só BFS (tecla 3) e A\* (tecla 4).
+**A troca é no slide 7**, quando sai o conceito e entra o código — Gabriel
+escreveu a implementação, então é natural que ele assuma daí em diante.
+Combinem uma frase de passagem ("e é assim que isso vira código — Gabriel")
+para não ficar aquele silêncio de troca de teclado.
+
+**Nas perguntas, os dois respondem.** Divisão que funciona: Hugo pega o que
+for conceito (por que `h` não pode superestimar, diferença para a gulosa,
+`h = 0`), Gabriel pega o que for implementação (o desempate por `-g`, o
+recálculo do `g`, os números). Mas **os dois precisam saber tudo** — o
+professor pode perguntar a qualquer um, e a seção 8 aqui tem as respostas.
+
+**Risco de tempo:** o bloco da demo é o que mais escapa. Deixem a janela do
+`maze.py` **já aberta** antes de começar e, se estiverem atrasados, cortem a
+busca aleatória e a DFS — mostrem só BFS (tecla 3) e A\* (tecla 4).
 
 ---
 
